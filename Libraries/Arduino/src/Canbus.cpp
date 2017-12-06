@@ -61,17 +61,17 @@ char CanbusClass::message_rx(unsigned char *buffer) {
 
 }
 
+//construct a message to tx
 char CanbusClass::message_tx(void) {
 	tCAN message;
 
-
-	// einige Testwerte
+	//provide msg ID, data length and payload
 	message.id = 0x7DF;
 	message.header.rtr = 0;
 	message.header.length = 8;
-	message.data[0] = 0x02;
-	message.data[1] = 0x01;
-	message.data[2] = 0x05;
+	message.data[0] = 0x02; //bytes to follow
+	message.data[1] = 0x01; //$service
+	message.data[2] = 0x05; //PID [2] or DID [2,3]
 	message.data[3] = 0x00;
 	message.data[4] = 0x00;
 	message.data[5] = 0x00;

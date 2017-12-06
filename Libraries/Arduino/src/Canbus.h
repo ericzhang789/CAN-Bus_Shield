@@ -24,7 +24,7 @@
 #define PID_REPLY			0x7E8
 #define EID_FUNC_REPLY      0x98DAF111     //EID REPLY SWAP SRC, DEST
 
-class CanIdClass{
+class diagnosticIdClass{
     
     
     
