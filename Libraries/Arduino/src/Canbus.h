@@ -20,8 +20,15 @@
 #define THROTTLE			0x11
 
 #define PID_REQUEST         0x7DF
+#define EID_FUNC_RQ         0x98DA11F1     //18DA11F1 MSB flip
 #define PID_REPLY			0x7E8
+#define EID_FUNC_REPLY      0x98DAF111     //EID REPLY SWAP SRC, DEST
 
+class CanIdClass{
+    
+    
+    
+}
 class CanbusClass
 {
   public:

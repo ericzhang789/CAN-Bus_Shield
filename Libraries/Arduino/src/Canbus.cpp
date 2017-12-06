@@ -103,7 +103,7 @@ char CanbusClass::ecu_req(unsigned char pid,  char *buffer)
 	float engine_data;
 	int timeout = 0;
 	char message_ok = 0;
-	// Prepair message
+	// Prepare message
 	message.id = PID_REQUEST;
 	message.header.rtr = 0;
 	message.header.length = 8;
